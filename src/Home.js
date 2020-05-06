@@ -39,9 +39,7 @@ class Home extends Component {
               <div className="media-body">
                 <div className="article-metadata" style={articlestyle}>
                   <img style={imgstyle} className="thumbnail account-img" src="https://stackblitz.com/files/react-scepxt/github/GDThumar2409/react-BigO/master/download.png" />
-                  <a className="article-title" href="#">Lab 1</a>
-                  <hr />
-
+                  <Link to="/Challenge"  className="article-title" href="#">Lab 1</Link>
                 </div>
               </div>
             </div>
@@ -49,7 +47,7 @@ class Home extends Component {
               <div className="media-body">
                 <div className="article-metadata" style={articlestyle}>
                   <img style={imgstyle} className="thumbnail account-img" src="https://stackblitz.com/files/react-scepxt/github/GDThumar2409/react-BigO/master/download.png" />
-                  <a className="article-title" href="#">Lab 2</a>
+                  <Link to="/Challenge" className="article-title" href="#">Lab 2</Link>
                 </div>
               </div>
             </div>

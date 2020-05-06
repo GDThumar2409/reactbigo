@@ -12,6 +12,7 @@ import Header from './Header';
 import Home from './Home'
 import CSVUpload from './CSVUpload'
 import Login from './login'
+import Challenge from './challenge'
 import Editor from './Editor'
 import NewLab from './NewLab'
 import './style.css';
@@ -51,6 +52,9 @@ class App extends Component {
           </Route>
           <Route path="/Add-Lab">
             <NewLab />
+          </Route>
+          <Route path="/challenge">
+            <Challenge />
           </Route>
           <Route path="/">
             <Home />
