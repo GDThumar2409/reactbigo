@@ -4,6 +4,7 @@ import {
   NavLink,
   Link
 } from "react-router-dom";
+import MySubjects from './MySubjects';
 
 class Home extends Component {
   constructor(props) {
@@ -21,19 +22,20 @@ class Home extends Component {
       borderColor: "#5f788a"
     };
     return (
-
+      <main role="main" className="container">
+        <div className="row">
           <div className="col-md-8">
-            <div>
-              <div style={{ float: 'right' }}>
-                <Link to="/Add-Lab" className="btn btn-outline-info" type="submit">Add new Lab</Link>
-
+            <div className="media content-section">
+              <div className="media-body">
+                <div  style={{float:"right"}}>          
+                  <Link  to="/Add-Lab" className="btn btn-outline-info" type="submit">Add new Lab</Link>
+                </div>
+                <div>
+                <h2>Dsa</h2>    
+                </div>               
               </div>
-              <div>
-                <h2>Dsa</h2>
-              </div>
-
             </div>
-            <br />
+            <hr />
             <div className="media content-section">
               <div className="media-body">
                 <div className="article-metadata" style={articlestyle}>
@@ -51,7 +53,9 @@ class Home extends Component {
               </div>
             </div>
           </div>
-        
+          <MySubjects></MySubjects>
+        </div>
+      </main>
     );
   }
 }

@@ -4,6 +4,7 @@ import AceEditor from "react-ace";
 
 import "ace-builds/src-noconflict/mode-java";
 import "ace-builds/src-noconflict/theme-github";
+import MySubjects from './MySubjects';
 
 
 class Editor extends Component {
@@ -34,6 +35,7 @@ class Editor extends Component {
                             <strong>Success!</strong> This alert box could indicate a successful or positive action.
                         </div>
                     </div>
+                    <MySubjects></MySubjects>
                 </div>
             </div>
         );

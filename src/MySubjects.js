@@ -4,7 +4,7 @@ export default class MySubjects extends Component {
   render() {
     return (
         <div className="col-md-4">
-        <br /><br /><br />
+      
         <div className="content-section">
           <div>
             <h2 style={{ textAlign: 'center' }}> My subjects </h2>

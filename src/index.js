@@ -36,37 +36,32 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <main role="main" className="container">
-          <div className="row">
-
-            <Switch>
-              {/* If the current URL is /about, this route is rendered
+        <Switch>
+          {/* If the current URL is /about, this route is rendered
             while the rest are ignored */}
-              <Route path="/home">
-                <Home />
-              </Route>
-              <Route path="/login">
-                <Login />
-              </Route>
-              <Route path="/csvupload">
-                <CSVUpload />
-              </Route>
-              <Route path="/editor">
-                <Editor />
-              </Route>
-              <Route path="/Add-Lab">
-                <NewLab />
-              </Route>
-              <Route path="/challenge">
-                <Challenge />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
-            <MySubjects />
-          </div>
-        </main>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/csvupload">
+            <CSVUpload />
+          </Route>
+          <Route path="/editor">
+            <Editor />
+          </Route>
+          <Route path="/Add-Lab">
+            <NewLab />
+          </Route>
+          <Route path="/challenge">
+            <Challenge />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+        
       </div>
     );
   }

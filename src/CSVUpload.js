@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import './CSVUpload.css';
+import MySubjects from './MySubjects';
 
 class CSVUpload extends Component {
   constructor(props) {
@@ -44,7 +45,7 @@ class CSVUpload extends Component {
       <div className="container">
         <div className="row">
           <div className="col-md-8">
-            <div className="media content-section">
+            <div className="media content-section">           
               <div className="media-body">
                 <div className="article-metadata" style={articlestyle}>
                   <img style={imgstyle} className="thumbnail account-img" src="https://stackblitz.com/files/react-scepxt/github/GDThumar2409/react-BigO/master/download.png" />
@@ -57,6 +58,7 @@ class CSVUpload extends Component {
               </div>
             </div>
           </div>
+          <MySubjects></MySubjects>
         </div>
       </div>
     );
